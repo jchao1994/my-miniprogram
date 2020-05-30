@@ -1,16 +1,102 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/Home",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/home/childPages/categoryPage/CategoryPage",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/imgDetail/ImgDetail",
+			"style": {
+				"navigationBarTitleText": "图片详情"
+			}
+		},
+		{
+			"path": "pages/albumDetail/AlbumDetail",
+			"style": {
+				"navigationBarTitleText": "专辑详情"
+			}
+		},
+		{
+			"path": "pages/horizontal/Horizontal",
+			"style": {
+				"navigationBarTitleText": "横屏"
+			}
+		},
+		{
+			"path": "pages/video/Video",
+			"style": {
+				"navigationBarTitleText": "精美视频"
+			}
+		},
+		{
+			"path": "pages/videoDetail/VideoDetail",
+			"style": {
+				"navigationBarTitleText": "视频详情"
+			}
+		},
+		{
+			"path": "pages/search/Search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/mine/Mine",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "懂你找图",
+		"navigationBarBackgroundColor": "#000"
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#d4237a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"position": "bottom",
+		"list": [
+			{
+				"pagePath": "pages/home/Home",
+				"text": "首页",
+				"iconPath": "static/icon/_home.png",
+				"selectedIconPath": "static/icon/home.png"
+			},
+			{
+				"pagePath": "pages/horizontal/Horizontal",
+				"text": "横屏",
+				"iconPath": "static/icon/_img.png",
+				"selectedIconPath": "static/icon/img.png"
+			},
+			{
+				"pagePath": "pages/video/Video",
+				"text": "精美视频",
+				"iconPath": "static/icon/_videocamera.png",
+				"selectedIconPath": "static/icon/videocamera.png"
+			},
+			{
+				"pagePath": "pages/search/Search",
+				"text": "搜索",
+				"iconPath": "static/icon/_search.png",
+				"selectedIconPath": "static/icon/search.png"
+			},
+			{
+				"pagePath": "pages/mine/Mine",
+				"text": "我的",
+				"iconPath": "static/icon/_my.png",
+				"selectedIconPath": "static/icon/my.png"
+			}
+		]
 	}
 }
